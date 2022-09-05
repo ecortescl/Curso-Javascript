@@ -1,2 +1,2 @@
-# js-academy
-Curso de Javascript Basico 
+# Javascript
+Curso de Javascript
