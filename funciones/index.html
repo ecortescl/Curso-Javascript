@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+<style>
+    .btn-flotante {
+        position: fixed;
+        left: 10px;
+        bottom: 0;
+        width: 150px;
+        color: #fff;
+        border-radius: 15px 15px 0 0;
+    }
+</style>
+
+<body style="text-align:center; background-color: beige;font-family:
+'Overpass', sans-serif;">
+    <div class="btn-flotante"><a href="../index.html" class="btn btn-dark btn-sm m-2">Volver</a></div>
+    <h1>Fundamentos de Javascript</h1>
+    <h2>FUNCIONES</h2>
+    <pre><code>
+        // declarar una funcion simple
+function miPrimeraFuncion() {
+    console.log('¡Hola a todos!');
+}
+
+// Llamar la funcion 
+miPrimeraFuncion();
+
+
+// declarar una variable y enviar un dato
+
+function miSegundaFuncion(valor) {
+    console.log(`Hola ${valor}.`)
+
+}
+
+// llamar la funcion y enviar un valor
+miSegundaFuncion('Esteban Cortes')
+
+
+// declarar una funcion de expresion en este caso declaramos dentro de un const la funcion sin necesidad de inicializar con un function
+const Sumados = function sumaDos(valor) {
+        // tomamos el valor y le sumamos 2
+        return valor + 2
+    }
+    // llamamos la funcion con un valor dentro de un console.log
+console.log(Sumados(5))
+
+// declarar una funcion de flecha
+const saluda = (nombre) => {
+    return `Hola ${nombre}`;
+}
+console.log(saluda('Esteban Cortes'))
+
+// Vamos a compactar un poco más el código.
+const saluda2 = (nombre) => `Hola ${nombre}`;
+console.log(saluda2('Esteban Cortes')); // => Hola Victor
+    </code></pre>
+    <hr>
+    <h5>Hecho por Esteban Cortés</h5>
+    <h6>www.ecortes.cl</h6>
+
+
+
+
+    <script src="funciones.js"></script>
+
+</body>
+
+</html>
